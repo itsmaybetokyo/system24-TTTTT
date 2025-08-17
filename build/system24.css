@@ -1,7 +1,13 @@
 /* main.css */
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
-@import url('https://fonts.cdnfonts.com/css/asciid');
+
+@font-face {
+    font-family: 'asciid';
+    font-style: normal;
+    font-weight: 400;
+    src: local('asciid'), url('https://refact0r.github.io/system24/assets/asciid.woff') format('woff');
+}
 
 body {
     /* font, change to '' for default discord font */
@@ -161,6 +167,9 @@ body {
     }
     .container__01ae2 {
         background-color: var(--bg-base-primary);
+    }
+    .container__37e49 {
+        padding: 8px;
     }
 }
 
@@ -357,7 +366,8 @@ body {
         .guilds_c48ade,
         .peopleColumn__133bf,
         .tabBody__133bf,
-        .container__01ae2 {
+        .container__01ae2,
+        .chatContent_f75fb0 {
             overflow: visible;
         }
         .page_c48ade,
@@ -409,6 +419,10 @@ body {
 
         .callContainer_cb9592 {
             padding: 8px;
+        }
+
+        .messagesWrapper__36d07 {
+            mask: none !important;
         }
     }
 }
@@ -490,9 +504,9 @@ body {
 
     .wrapper__44b0c,
     .container__1ce5d {
-        --online-2: #40a258;
+        --online-2: #43a25a;
         --dnd-2: #d83a41;
-        --idle-2: #cc954c;
+        --idle-2: #ca9654;
         --offline-2: #82838b;
         --streaming-2: #9147ff;
     }

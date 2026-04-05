@@ -6,7 +6,9 @@
     font-family: 'asciid';
     font-style: normal;
     font-weight: 400;
-    src: local('asciid'), url('https://refact0r.github.io/system24/assets/asciid.woff') format('woff');
+    src:
+        local('asciid'),
+        url('https://refact0r.github.io/system24/assets/asciid.woff') format('woff');
 }
 
 body {
@@ -41,7 +43,7 @@ body {
     --custom-dms-icon: off; /* off: use default discord icon, hide: remove icon entirely, custom: use custom icon */
     --dms-icon-svg-url: url(''); /* icon svg url. MUST BE A SVG. */
     --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */
-    --dms-icon-color-before: var(--icon-secondary); /* normal icon color */
+    --dms-icon-color-before: var(--icon-subtle); /* normal icon color */
     --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */
     --custom-dms-background: off; /* off to disable, image to use a background image (must set url variable below), color to use a custom color/gradient */
     --dms-background-image-url: url(''); /* url of the background image */
@@ -163,10 +165,10 @@ body {
 
 .visual-refresh {
     .bg__960e4 {
-        background: var(--bg-base-primary);
+        background: var(--background-base-low);
     }
     .container__01ae2 {
-        background-color: var(--bg-base-primary);
+        background-color: var(--background-base-low);
     }
     .container__37e49 {
         padding: 8px;
@@ -304,7 +306,7 @@ body {
                 position: absolute;
                 top: -10px;
                 left: 8px;
-                background-color: var(--bg-base-primary);
+                background-color: var(--background-base-low);
                 padding: 0 4px;
                 z-index: 100;
                 font-size: 16px;
@@ -389,11 +391,6 @@ body {
 
         .scroller__36d07 {
             top: 8px;
-        }
-        .membersWrap_c8ffbb,
-        .guilds__5e434,
-        .sidebarList__5e434 {
-            padding-top: 8px;
         }
         .membersWrap_c8ffbb {
             height: calc(100% - 8px);
@@ -524,17 +521,17 @@ body {
         right: -4px;
         border: 2px solid var(--background-base-lower);
     }
-    .wrapper__44b0c:has(rect[fill='#43a25a'])::after,
+    .wrapper__44b0c:has(rect[fill='#45a366'])::after,
     .container__1ce5d:has(.status_a423bd[style='background-color: rgb(67, 162, 90);'])::after {
         background: var(--online-2) !important;
     }
-    .wrapper__44b0c:has(rect[fill='#d83a42'])::after {
+    .wrapper__44b0c:has(rect[fill='#da3e44'])::after {
         background: var(--dnd-2) !important;
     }
-    .wrapper__44b0c:has(rect[fill='#ca9654'])::after {
+    .wrapper__44b0c:has(rect[fill='#ffc04e'])::after {
         background: var(--idle-2) !important;
     }
-    .wrapper__44b0c:has(rect[fill='#82838b'])::after {
+    .wrapper__44b0c:has(rect[fill='#84858d'])::after {
         background: var(--offline-2) !important;
     }
     .wrapper__44b0c:has(rect[fill='#9147ff'])::after {

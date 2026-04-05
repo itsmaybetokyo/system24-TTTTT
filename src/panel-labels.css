@@ -32,7 +32,7 @@ body {
                 position: absolute;
                 top: -10px;
                 left: 8px;
-                background-color: var(--bg-base-primary);
+                background-color: var(--background-base-low);
                 padding: 0 4px;
                 z-index: 100;
                 font-size: 16px;
@@ -117,11 +117,6 @@ body {
 
         .scroller__36d07 {
             top: 8px;
-        }
-        .membersWrap_c8ffbb,
-        .guilds__5e434,
-        .sidebarList__5e434 {
-            padding-top: 8px;
         }
         .membersWrap_c8ffbb {
             height: calc(100% - 8px);
